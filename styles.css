@@ -628,7 +628,9 @@ body {
 }
 
 .pricing-card__price {
-  margin-bottom: 8px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
 }
 
 .pricing-card__down {
@@ -644,19 +646,6 @@ body {
   font-size: 0.8125rem;
   color: var(--silver-dark);
   margin-top: 4px;
-}
-
-.pricing-card__monthly {
-  font-size: 0.9375rem;
-  color: var(--silver-muted);
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-  border-bottom: 1px solid var(--border);
-}
-
-.pricing-card__monthly span {
-  color: var(--cyan);
-  font-weight: 600;
 }
 
 .pricing-card__features {
@@ -713,7 +702,7 @@ body {
 
 .payment-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 24px;
 }
