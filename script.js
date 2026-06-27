@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Animate elements on scroll
   const animateTargets = document.querySelectorAll(
-    '.glass-card, .feature-item, .timeline__item, .faq-item'
+    '.glass-card, .showcase-card, .timeline__item, .faq-item'
   );
 
   animateTargets.forEach((el) => {
