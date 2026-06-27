@@ -139,40 +139,170 @@
     </div>
   </section>
 
-  <section id="features" class="section">
-    <div class="section__header">
+  <section id="features" class="section section--features">
+    <div class="section__header section__header--center">
       <span class="section__eyebrow">Platform Features</span>
       <h2>Everything your customers expect — and your team needs.</h2>
+      <p>Four core surfaces, one connected system — built for Primecore.</p>
     </div>
-    <div class="features-grid">
-      <div class="feature-item">
-        <h4>License Plate & Vehicles</h4>
-        <p>Members register plates in the app. On Elite, LPR cameras at the lane match plates to memberships and open the gate hands-free.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Membership Management</h4>
-        <p>Sign up, upgrade, pause, or cancel plans. Auto-billing via Stripe with receipt history.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Appointment Scheduling</h4>
-        <p>Book detail services, express lanes, or premium washes with real-time availability.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Rewards & Loyalty</h4>
-        <p>Points per visit, tiered perks, referral bonuses, and push notification campaigns.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Push Notifications</h4>
-        <p>Wash reminders, promo alerts, membership renewal nudges, and weather-triggered offers.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Employee Training</h4>
-        <p>Onboarding modules, SOP videos, and completion tracking — included in Complete Platform and Elite tiers.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Analytics Dashboard</h4>
-        <p>Member growth, visit frequency, revenue trends, and reward redemption insights.</p>
-      </div>
+
+    <div class="product-showcase">
+      <!-- Admin Dashboard -->
+      <article class="showcase-card glass-card">
+        <div class="showcase-visual showcase-visual--dashboard">
+          <div class="dash-frame">
+            <div class="dash-frame__bar">
+              <span class="dash-frame__dots"><i></i><i></i><i></i></span>
+              <span class="dash-frame__url">admin.primecorecarwash.com</span>
+            </div>
+            <div class="dash-frame__body">
+              <aside class="dash-sidebar">
+                <div class="dash-sidebar__logo"></div>
+                <div class="dash-sidebar__item dash-sidebar__item--active"></div>
+                <div class="dash-sidebar__item"></div>
+                <div class="dash-sidebar__item"></div>
+                <div class="dash-sidebar__item"></div>
+              </aside>
+              <main class="dash-main">
+                <div class="dash-stats">
+                  <div class="dash-stat"><span class="dash-stat__val">847</span><span class="dash-stat__lbl">Members</span></div>
+                  <div class="dash-stat dash-stat--highlight"><span class="dash-stat__val">124</span><span class="dash-stat__lbl">Today</span></div>
+                  <div class="dash-stat"><span class="dash-stat__val">$12.4k</span><span class="dash-stat__lbl">MRR</span></div>
+                </div>
+                <div class="dash-chart">
+                  <div class="dash-chart__bar" style="--h: 45%"></div>
+                  <div class="dash-chart__bar" style="--h: 70%"></div>
+                  <div class="dash-chart__bar" style="--h: 55%"></div>
+                  <div class="dash-chart__bar dash-chart__bar--peak" style="--h: 90%"></div>
+                  <div class="dash-chart__bar" style="--h: 65%"></div>
+                  <div class="dash-chart__bar" style="--h: 80%"></div>
+                  <div class="dash-chart__bar" style="--h: 60%"></div>
+                </div>
+                <div class="dash-table">
+                  <div class="dash-table__row"><span></span><span class="dash-table__badge">Active</span></div>
+                  <div class="dash-table__row"><span></span><span class="dash-table__badge">Active</span></div>
+                  <div class="dash-table__row"><span></span><span class="dash-table__badge dash-table__badge--warn">Paused</span></div>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-card__info">
+          <span class="showcase-card__tag">All packages</span>
+          <h4>Admin Dashboard</h4>
+          <p>Member lookup, live analytics, billing, appointments, and reward config — your team's command center.</p>
+        </div>
+      </article>
+
+      <!-- iOS App -->
+      <article class="showcase-card glass-card">
+        <div class="showcase-visual showcase-visual--phone">
+          <div class="device device--ios">
+            <div class="device__notch"></div>
+            <div class="device__screen device__screen--app">
+              <div class="app-header">
+                <img src="assets/logo.png" alt="" class="app-header__logo" />
+                <span>Primecore</span>
+              </div>
+              <div class="app-membership">
+                <span class="app-membership__label">Unlimited Plan</span>
+                <span class="app-membership__status">Active · Renews Apr 12</span>
+                <div class="app-membership__points">
+                  <span>2,450</span>
+                  <small>reward pts</small>
+                </div>
+              </div>
+              <div class="app-actions">
+                <div class="app-action app-action--primary">Book Wash</div>
+                <div class="app-action">My Vehicles</div>
+              </div>
+              <div class="app-visit">
+                <span class="app-visit__title">Last Visit</span>
+                <span class="app-visit__date">Today · Express Lane</span>
+              </div>
+              <nav class="app-tabs">
+                <span class="app-tabs__item app-tabs__item--active">Home</span>
+                <span class="app-tabs__item">Rewards</span>
+                <span class="app-tabs__item">Account</span>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-card__info">
+          <span class="showcase-card__tag">All packages</span>
+          <h4>iOS App</h4>
+          <p>Native iPhone experience — manage membership, book appointments, track rewards, and register license plates.</p>
+        </div>
+      </article>
+
+      <!-- Android App -->
+      <article class="showcase-card glass-card">
+        <div class="showcase-visual showcase-visual--phone">
+          <div class="device device--android">
+            <div class="device__camera"></div>
+            <div class="device__screen device__screen--app">
+              <div class="app-header app-header--android">
+                <span>Primecore</span>
+                <div class="app-header__avatar"></div>
+              </div>
+              <div class="app-pass">
+                <span class="app-pass__title">Member Pass</span>
+                <div class="app-pass__qr"><div class="qr-pattern"></div></div>
+                <span class="app-pass__plate">FL · ABC 1234</span>
+              </div>
+              <div class="app-quick">
+                <div class="app-quick__item"><span>Schedule</span></div>
+                <div class="app-quick__item"><span>History</span></div>
+                <div class="app-quick__item"><span>Refer</span></div>
+              </div>
+              <nav class="app-tabs app-tabs--android">
+                <span class="app-tabs__item app-tabs__item--active">●</span>
+                <span class="app-tabs__item">○</span>
+                <span class="app-tabs__item">○</span>
+                <span class="app-tabs__item">○</span>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-card__info">
+          <span class="showcase-card__tag">All packages</span>
+          <h4>Android App</h4>
+          <p>Full-featured Android app with member pass, plate registration, scheduling, and push notifications.</p>
+        </div>
+      </article>
+
+      <!-- Gate Entry -->
+      <article class="showcase-card glass-card showcase-card--elite">
+        <div class="showcase-visual showcase-visual--gate">
+          <div class="gate-scene">
+            <div class="gate-scene__sky"></div>
+            <div class="gate-scene__lane">
+              <div class="gate-scene__car">
+                <div class="gate-scene__plate">ABC 1234</div>
+              </div>
+              <div class="gate-scene__camera">
+                <span class="gate-scene__scan"></span>
+              </div>
+              <div class="gate-scene__arm gate-scene__arm--open"></div>
+            </div>
+            <div class="gate-scene__hud">
+              <div class="gate-scene__status gate-scene__status--ok">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Member Verified
+              </div>
+              <div class="gate-scene__detail">
+                <span>Michael R.</span>
+                <span>Unlimited · LPR Match</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-card__info">
+          <span class="showcase-card__tag showcase-card__tag--elite">Primecore Elite</span>
+          <h4>Gate Entry System</h4>
+          <p>LPR cameras read the plate or members scan a dynamic QR — gate opens instantly for active memberships.</p>
+        </div>
+      </article>
     </div>
   </section>
 
