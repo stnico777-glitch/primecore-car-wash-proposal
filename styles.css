@@ -459,6 +459,20 @@ body {
 .phone-mock__member {
   font-size: 0.8125rem;
   color: var(--silver-muted);
+  margin-bottom: 6px;
+}
+
+.phone-mock__plate {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--bg);
+  background: linear-gradient(180deg, #f5f5f5 0%, #d4d4d8 100%);
+  border: 1px solid #71717a;
+  border-radius: 4px;
+  padding: 4px 10px;
   margin-bottom: 20px;
 }
 
