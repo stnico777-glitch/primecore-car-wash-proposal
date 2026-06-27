@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primecore Car Wash — Digital Platform Proposal</title>
+  <meta name="description" content="Custom iOS, Android & web platform proposal for Primecore Car Wash — membership, appointments, rewards, and gate access." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow--left"></div>
+  <div class="bg-glow bg-glow--right"></div>
+
+  <nav class="nav">
+    <a href="#top" class="nav__brand">
+      <img src="assets/logo.png" alt="Primecore Car Wash" class="nav__logo" />
+    </a>
+    <div class="nav__links">
+      <a href="#overview">Overview</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#contact" class="nav__cta">Get Started</a>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero__badge">Prepared for Primecore Car Wash · Launch in ~8 weeks</div>
+    <h1 class="hero__title">
+      Your car wash,<br />
+      <span class="hero__title-accent">fully connected.</span>
+    </h1>
+    <p class="hero__subtitle">
+      A custom iOS, Android, and web platform so your customers can manage memberships,
+      book appointments, earn rewards — and drive straight in with a tap of their phone.
+    </p>
+    <div class="hero__actions">
+      <a href="#pricing" class="btn btn--primary">View Packages</a>
+      <a href="#overview" class="btn btn--ghost">See What's Included</a>
+    </div>
+    <div class="hero__stats">
+      <div class="stat">
+        <span class="stat__value">3</span>
+        <span class="stat__label">Platforms</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value">8</span>
+        <span class="stat__label">Week Build</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value">1</span>
+        <span class="stat__label">Unified System</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="overview" class="section">
+    <div class="section__header">
+      <span class="section__eyebrow">The Vision</span>
+      <h2>One app. Every touchpoint.</h2>
+      <p>
+        Primecore deserves more than a generic booking widget. This proposal outlines a
+        purpose-built digital ecosystem — branded to your identity, ready before your doors open,
+        and designed to grow with your business.
+      </p>
+    </div>
+    <div class="overview-grid">
+      <article class="glass-card overview-card">
+        <div class="overview-card__icon">📱</div>
+        <h3>Customer Mobile App</h3>
+        <p>iOS & Android apps for membership management, wash history, rewards, and frictionless entry at your gate.</p>
+      </article>
+      <article class="glass-card overview-card">
+        <div class="overview-card__icon">🌐</div>
+        <h3>Customer Web Portal</h3>
+        <p>Full-featured web experience for members who prefer desktop — sign up, manage plans, and schedule from any browser.</p>
+      </article>
+      <article class="glass-card overview-card">
+        <div class="overview-card__icon">⚙️</div>
+        <h3>Admin Dashboard</h3>
+        <p>Web-based back office for your team — member lookup, appointment calendar, reward configuration, and real-time analytics.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="access" class="section section--access">
+    <div class="access-layout">
+      <div class="access-content">
+        <span class="section__eyebrow">Smart Entry System</span>
+        <h2>Drive in without stopping.</h2>
+        <p>
+          For packages that include gate integration, members receive a dynamic access pass
+          inside the app — no cards, no fobs, no lane backups.
+        </p>
+        <ul class="access-list">
+          <li>
+            <strong>Rotating QR Code</strong>
+            <span>A secure, time-limited code refreshes every 60 seconds — scanned at your entrance kiosk or lane reader.</span>
+          </li>
+          <li>
+            <strong>NFC Tap-to-Enter</strong>
+            <span>Hold the phone near the reader for instant verification on supported devices.</span>
+          </li>
+          <li>
+            <strong>Live Membership Check</strong>
+            <span>Gate only opens for active members — expired or paused accounts are blocked automatically.</span>
+          </li>
+          <li>
+            <strong>Works With Your Hardware</strong>
+            <span>We integrate with standard barrier controllers and LPR (license plate) systems already common in car wash installs.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="access-visual glass-card">
+        <div class="phone-mock">
+          <div class="phone-mock__screen">
+            <div class="phone-mock__header">Primecore Pass</div>
+            <div class="phone-mock__member">Michael R. · Unlimited Plan</div>
+            <div class="phone-mock__qr">
+              <div class="qr-pattern"></div>
+            </div>
+            <div class="phone-mock__timer">Refreshes in 0:47</div>
+            <div class="phone-mock__nfc">Tap phone to enter →</div>
+          </div>
+        </div>
+        <div class="access-visual__gate">
+          <div class="gate-bar"></div>
+          <span>Gate opens on verified scan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="section__header">
+      <span class="section__eyebrow">Platform Features</span>
+      <h2>Everything your customers expect — and your team needs.</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h4>Membership Management</h4>
+        <p>Sign up, upgrade, pause, or cancel plans. Auto-billing via Stripe with receipt history.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Appointment Scheduling</h4>
+        <p>Book detail services, express lanes, or premium washes with real-time availability.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Rewards & Loyalty</h4>
+        <p>Points per visit, tiered perks, referral bonuses, and push notification campaigns.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Push Notifications</h4>
+        <p>Wash reminders, promo alerts, membership renewal nudges, and weather-triggered offers.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Employee Training</h4>
+        <p>Onboarding modules, SOP videos, and completion tracking — available on Enterprise tier.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Analytics Dashboard</h4>
+        <p>Member growth, visit frequency, revenue trends, and reward redemption insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section section--pricing">
+    <div class="pricing-bg-title">Pricing</div>
+    <div class="section__header section__header--center">
+      <span class="section__eyebrow">Choose Your Package</span>
+      <h2>Three tiers. One goal — launch on time.</h2>
+      <p>All packages include iOS, Android, and web apps with a 50% down payment to begin development.</p>
+    </div>
+
+    <div class="pricing-cards">
+      <!-- Tier 1 -->
+      <article class="pricing-card glass-card">
+        <div class="pricing-card__header">
+          <span class="pricing-card__tier">Platform Essentials</span>
+          <p class="pricing-card__desc">Software only — no gate hardware integration</p>
+        </div>
+        <div class="pricing-card__price">
+          <span class="pricing-card__down">$12,500</span>
+          <span class="pricing-card__down-label">down payment</span>
+        </div>
+        <div class="pricing-card__monthly">
+          <span>+ $399</span>/mo platform & hosting
+        </div>
+        <ul class="pricing-card__features">
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>iOS & Android customer apps</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Customer web portal</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Admin dashboard</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Membership & billing (Stripe)</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Appointment scheduling</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Basic rewards program</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Push notifications</li>
+          <li class="pricing-card__feature--muted"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>Gate / entry system</li>
+          <li class="pricing-card__feature--muted"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>Employee training module</li>
+        </ul>
+        <a href="#contact" class="btn btn--card">Get Started</a>
+        <p class="pricing-card__note">Balance of $12,500 due at launch</p>
+      </article>
+
+      <!-- Tier 2 - Featured -->
+      <article class="pricing-card pricing-card--featured glass-card">
+        <div class="pricing-card__badge">Most Popular</div>
+        <div class="pricing-card__header">
+          <span class="pricing-card__tier">Complete Access</span>
+          <p class="pricing-card__desc">Full platform + smart gate entry system</p>
+        </div>
+        <div class="pricing-card__price">
+          <span class="pricing-card__down">$24,900</span>
+          <span class="pricing-card__down-label">down payment</span>
+        </div>
+        <div class="pricing-card__monthly">
+          <span>+ $749</span>/mo platform, hosting & gate support
+        </div>
+        <ul class="pricing-card__features">
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Everything in Platform Essentials</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Dynamic QR + NFC gate access</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Gate controller integration</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Real-time membership verification</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Lane entry kiosk software</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Advanced rewards & referrals</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Visit history & wash tracking</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>On-site install & testing support</li>
+          <li class="pricing-card__feature--muted"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>Employee training module</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--card">Get Started</a>
+        <p class="pricing-card__note">Balance of $24,900 due at launch</p>
+      </article>
+
+      <!-- Tier 3 -->
+      <article class="pricing-card glass-card">
+        <div class="pricing-card__header">
+          <span class="pricing-card__tier">Primecore Elite</span>
+          <p class="pricing-card__desc">Complete system + staff training & premium support</p>
+        </div>
+        <div class="pricing-card__price">
+          <span class="pricing-card__down">$36,500</span>
+          <span class="pricing-card__down-label">down payment</span>
+        </div>
+        <div class="pricing-card__monthly">
+          <span>+ $1,099</span>/mo full-service retainer
+        </div>
+        <ul class="pricing-card__features">
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Everything in Complete Access</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Employee training portal (LMS)</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SOP videos & onboarding modules</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Multi-location ready architecture</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Advanced analytics & reporting</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom promo & campaign builder</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Priority support & quarterly reviews</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>12 months of feature updates included</li>
+        </ul>
+        <a href="#contact" class="btn btn--card">Get Started</a>
+        <p class="pricing-card__note">Balance of $36,500 due at launch</p>
+      </article>
+    </div>
+
+    <div class="pricing-footnote glass-card">
+      <h4>Payment Structure</h4>
+      <div class="payment-grid">
+        <div>
+          <strong>50% Down Payment</strong>
+          <p>Due at contract signing to kick off development and reserve your launch slot.</p>
+        </div>
+        <div>
+          <strong>50% at Launch</strong>
+          <p>Remaining balance due when apps are live and gate system is tested on-site.</p>
+        </div>
+        <div>
+          <strong>Monthly Retainer</strong>
+          <p>Covers hosting, monitoring, app store fees, security patches, and ongoing support.</p>
+        </div>
+      </div>
+      <p class="pricing-footnote__disclaimer">
+        Gate hardware (readers, controllers, barriers) is quoted separately based on your existing equipment.
+        Monthly fees begin at launch. All prices in USD.
+      </p>
+    </div>
+  </section>
+
+  <section id="timeline" class="section">
+    <div class="section__header">
+      <span class="section__eyebrow">Launch Timeline</span>
+      <h2>Ready before you open — 8 weeks.</h2>
+      <p>Structured to align with your ~2-month opening window.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__week">Week 1–2</div>
+        <h4>Discovery & Design</h4>
+        <p>Brand integration, wireframes, membership plan structure, and gate hardware assessment.</p>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__week">Week 3–5</div>
+        <h4>Core Development</h4>
+        <p>Apps, web portal, admin dashboard, Stripe billing, and rewards engine.</p>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__week">Week 6–7</div>
+        <h4>Gate Integration & QA</h4>
+        <p>Access pass system, on-site testing, employee training content (Elite tier).</p>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__week">Week 8</div>
+        <h4>Launch</h4>
+        <p>App Store & Play Store submission, go-live, team walkthrough, and opening-day support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section section--experience">
+    <div class="section__header section__header--center">
+      <span class="section__eyebrow">Proven Track Record</span>
+      <h2>Built by a developer who's shipped this before.</h2>
+    </div>
+    <div class="experience-grid">
+      <article class="glass-card experience-card">
+        <h4>Runzo</h4>
+        <p>Cross-platform fitness app with subscriptions, activity tracking, and real-time sync across iOS and Android.</p>
+      </article>
+      <article class="glass-card experience-card">
+        <h4>Awaken Online</h4>
+        <p>Wellness platform with guided programs, in-app purchases, and a polished member experience on mobile and web.</p>
+      </article>
+      <article class="glass-card experience-card">
+        <h4>AllergyCheck</h4>
+        <p>Restaurant allergen platform with QR-based customer access, admin dashboards, and multi-tenant architecture.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="section__header">
+      <span class="section__eyebrow">FAQ</span>
+      <h2>Common questions.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item glass-card">
+        <summary>Do I need special hardware for the gate system?</summary>
+        <p>Most car washes already have a barrier controller. We integrate via API with common systems (IoT relays, LPR cameras, standard access controllers). If you need new readers, we can recommend compatible hardware — typically $800–$2,500 per lane depending on setup.</p>
+      </details>
+      <details class="faq-item glass-card">
+        <summary>What if we open before the app is ready?</summary>
+        <p>We prioritize a "soft launch" core — membership sign-up and admin tools — by week 5, so you can start enrolling members even while gate integration is being finalized.</p>
+      </details>
+      <details class="faq-item glass-card">
+        <summary>Can we change membership plans later?</summary>
+        <p>Yes. Your admin dashboard lets you create, edit, and retire plans without developer involvement. Price changes sync to Stripe automatically.</p>
+      </details>
+      <details class="faq-item glass-card">
+        <summary>Who owns the code?</summary>
+        <p>You receive full ownership of all custom code upon final payment. The monthly retainer covers hosting, maintenance, and support — not licensing fees.</p>
+      </details>
+      <details class="faq-item glass-card">
+        <summary>What about App Store fees?</summary>
+        <p>Apple and Google developer accounts (~$99/yr and $25 one-time) are included in the monthly retainer for Complete Access and Elite tiers.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact" class="section section--contact">
+    <div class="contact-card glass-card">
+      <span class="section__eyebrow">Next Step</span>
+      <h2>Let's build Primecore's digital future.</h2>
+      <p>Review the tiers, pick what fits your launch, and we'll schedule a follow-up to finalize scope and get started.</p>
+      <div class="contact-actions">
+        <a href="mailto:hello@example.com?subject=Primecore%20Car%20Wash%20Proposal" class="btn btn--primary">Schedule a Call</a>
+        <a href="#pricing" class="btn btn--ghost">Compare Packages</a>
+      </div>
+      <p class="contact-note">Proposal valid for 30 days · Prepared by Nicolas Herrera</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="assets/logo.png" alt="Primecore Car Wash" class="footer__logo" />
+    <p>© 2026 Primecore Car Wash · Digital Platform Proposal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
