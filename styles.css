@@ -648,6 +648,14 @@ body {
   margin-top: 4px;
 }
 
+.pricing-card__deposit {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
 .pricing-card__features {
   list-style: none;
   flex: 1;
